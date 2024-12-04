@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  color: #333;
+}
+
+header {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #6b4f3e;
+  color: #fff;
+}
+
+.container_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ffdd99;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container_slides {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  position: relative;
+}
+
+.container_slides .slides {
+  z-index: 1;
+}
+
+.container_slides .video_embed iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 315px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container_slides:hover {
+  opacity: 0.9;
+}
+
+.form_section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.form_container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form_container h2 {
+  margin-bottom: 20px;
+}
+
+.form_container label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.form_container input, .form_container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form_container button {
+  background-color: #6b4f3e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form_container button:hover {
+  background-color: #543b2e;
+}
+
+@media (max-width: 768px) {
+  .menu a {
+    font-size: 14px;
+  }
+
+  .container_slides .slides h1 {
+    font-size: 14px;
+  }
+
+  .container_slides .video_embed iframe {
+    height: 200px;
+  }
+
+  .form_container {
+    padding: 10px;
+  }
+}
